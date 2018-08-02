@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form name="Form" onsubmit="return validateForm()">
+		Name: <input type="text" name="fname">
+			  <input type="submit" value="submit">
+	</form>
+
+	<p>Please enter a number and click ok</p>
+	<input type="number" id="validate1" min="20" max="100" required>
+	<button onclick="myFunction()">ok</button>
+	<p id="obj"></p>
+	<P>Enter a numbers between 20 to 100 in this input field</P>
+
+<script type="text/javascript">
+	function validateForm() {
+			var x = document.forms["Form"]["fname"].value;
+		if (x == "") {
+			alert (" Name must be filled out");
+			return false;
+		}
+	}
+
+	function myFunction() {
+		var inpObj = document.getElementById("validate1");
+		console.log();
+		if (!inpObj.checkValidity()) {
+			document.getElementById("obj").innerHTML = inpObj.validationMessage;
+		} else {
+			document.getElementById("obj").innerHTML = "Input Ok"
+		}
+	}
+</script>
+</body>
+</html>
