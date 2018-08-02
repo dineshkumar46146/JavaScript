@@ -15,6 +15,12 @@
 	<p id="obj"></p>
 	<P>Enter a numbers between 20 to 100 in this input field</P>
 
+	<input id="overflow" type="number" max="100" >
+	<button onclick="overflowFunction()">OK</button>
+	<p id="overflow1"></p>
+	<p>If the number is greater than 100 (the input's max attribute),
+	 an error message will be displayed.</p>
+
 <script type="text/javascript">
 	function validateForm() {
 			var x = document.forms["Form"]["fname"].value;
@@ -32,6 +38,16 @@
 		} else {
 			document.getElementById("obj").innerHTML = "Input Ok"
 		}
+	}
+
+	function overflowFunction() {
+		var txt = "";
+		if (document.getElementById("overflow").validity.rangeOverfolw) {
+			txt = "Value too large";
+		} else {
+			txt = "Input Ok";
+		}
+		document.getElementById("overflow1").innerHTML = txt;
 	}
 </script>
 </body>
