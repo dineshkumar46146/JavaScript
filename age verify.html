@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>age verify</title>
+</head>
+<body>
+<input type="number" id="age">
+<button onclick="verify()">check age</button>
+<script type="text/javascript">
+	function verify() {
+		var num;
+		num = document.getElementById("age").value;
+		if(num < 18) {
+			alert("under 18");
+		} else {
+			alert("you are adult");
+		}
+	}
+</script>
+</body>
+</html>
