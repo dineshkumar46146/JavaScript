@@ -5,12 +5,12 @@
 </head>
 <body>
 	<form name="Form" onsubmit="return validateForm()">
-		Name: <input type="text" name="fname">
+		Name: <input type="text" name="fname" onclick ="validateForm(this)">
 			  <input type="submit" value="submit">
 	</form>
 
 	<p>Please enter a number and click ok</p>
-	<input type="number" id="validate1" min="20" max="100" required>
+	<input type="number" id="validate1" min="20" max="100" onclick="myFunction(this)" required>
 	<button onclick="myFunction()">ok</button>
 	<p id="obj"></p>
 	<P>Enter a numbers between 20 to 100 in this input field</P>
@@ -22,7 +22,8 @@
 	 an error message will be displayed.</p>
 
 <script type="text/javascript">
-	function validateForm() {
+	function validateForm(y) {
+		    y.style.background = "skyblue"
 			var x = document.forms["Form"]["fname"].value;
 		if (x == "") {
 			alert (" Name must be filled out");
@@ -30,7 +31,8 @@
 		}
 	}
 
-	function myFunction() {
+	function myFunction(x) {
+		x.style.background = "yellow";
 		var inpObj = document.getElementById("validate1");
 		console.log();
 		if (!inpObj.checkValidity()) {
@@ -49,6 +51,8 @@
 		}
 		document.getElementById("overflow1").innerHTML = txt;
 	}
+
+
 </script>
 </body>
 </html>

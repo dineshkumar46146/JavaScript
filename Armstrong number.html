@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Armstrong number</title>
+</head>
+<body>
+	<input id="input">
+    <button onclick="armstr()">Check</button>
+<script>
+function armstr()
+{
+var arm=0,a,b,c,d,num;
+num=Number(document.getElementById("input").value);
+
+temp=num;
+while(temp>0)
+{
+a=temp%10;
+temp=parseInt(temp/10);
+arm=arm+a*a*a;
+}
+if(arm==num)
+{
+alert("Armstrong number");
+}
+else
+{
+alert("Not Armstrong number");
+}
+}
+</script>
+</body>
+</html>

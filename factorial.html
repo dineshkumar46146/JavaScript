@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>factorial</title>
+</head>
+<body>
+<input type="number" id="factorial">
+<button onclick="fact()">Click me</button>
+<input id="answer">
+<script type="text/javascript">
+	function fact() {
+		var i,no,fact;
+		fact = 1;
+		no =document.getElementById("factorial").value;
+		for (i = 1; i <= no; i++) {
+			fact = fact*i;
+		}
+		document.getElementById("answer").value = fact;
+
+	}
+</script>
+</body>
+</html>

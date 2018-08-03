@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>swapping</title>
+</head>
+<body>
+<input id="first">
+<input id="second"><br>
+<button onclick="swap()">swap</button><br>
+<input id="Ans1">
+<input id="Ans2"><br><br>
+<input id="first1">
+<input id="second1"><br>
+<button onclick="swap1()">swap</button><br>
+<input id="Ans11">
+<input id="Ans21">
+<script type="text/javascript">
+	function swap() {
+		var a,b,c;
+		a = Number(document.getElementById("first").value);
+		b = Number(document.getElementById("second").value);
+		c = a;
+		a = b;
+		b = c;
+		document.getElementById("Ans1").value = a;
+		document.getElementById("Ans2").value = b;
+
+	}
+	function swap1() {
+		var a,b;
+		a = Number(document.getElementById("first1").value);
+		b = Number(document.getElementById("second1").value);
+		a = a + b;
+		b = a - b;
+		a = a - b;
+		document.getElementById("Ans11").value = a;
+		document.getElementById("Ans21").value = b;
+
+	}
+
+</script>
+</body>
+</html>
