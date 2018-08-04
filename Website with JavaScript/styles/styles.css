@@ -1,0 +1,68 @@
+.screenfit {
+	margin: 0;
+	padding: 0;
+}
+.pcolor {
+	color: red;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #ed8a00;
+}
+.li1 {
+	float: left;
+}
+li a {
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	color: #fff;
+}
+li a:hover {
+    background-color: #779ca3;
+}
+#panel {
+    display: none;
+}
+.jsevents {
+	text-align: center;
+	color: #2fe04c;
+}
+#toptobottom{
+    
+    width: 100%;
+    height: 100px;
+    background: #932a87;
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+}
+@-webkit-keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+}
+/*accordion*/
+.accor {
+	background-color: #eee;
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	font-size: 15px;
+	transition: 0.4s;
+}
+.active, .accor:hover {
+	background-color: #ccc;
+}
+.panel1 {
+	padding: 0 18px;
+	display: none;
+	background-color: white;
+	overflow: hidden;
+}
