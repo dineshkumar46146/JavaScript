@@ -89,3 +89,8 @@ li a:hover {
 .boto {
 	text-align: center;
 }
+/*caps lock warning*/
+#caps {
+	display: none;
+	color: red;
+}
