@@ -1,5 +1,6 @@
 // string using console.log
 var name = 'Dhinesh kumar';
+document.getElementById("str").innerHTML = name;
 console.log(name.toUpperCase());
 console.log(name.toLowerCase());
 console.log(name.slice(8, 14));

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form validations</title>
+	<link rel="stylesheet" type="text/css" href="styles/forms.css">
+</head>
+<body>
+<div class="posi">
+	<h2>Registration form</h2>
+	<form name="regform" method="post" onsubmit="validations()">
+	<p>Name:<input type="text" size="65" name="name"></p><br>
+	<p>Address:<input type="text"size="65" name="address"></p><br>
+	<p>Email:<input type="text" size="65" name="email"></p><br>
+	<p>Password:<input type="password" size="65" name="password"></p><br>
+	<p>Telephone:<input type="number" size="65" name="telephone"></p><br>
+	<p>Select your course
+		<select type="text" name="subject">
+			<option></option>
+			<option>B.Tech</option>
+			<option>B.E</option>
+			<option>B.sc</option>
+			<option>Bca</option>
+		</select>
+	</p>
+	<p>comments:<textarea cols="65" name="comments"></textarea></p>
+<input type="reset" name="reset" value="reset">
+<input type="submit" name="submit" value="send">
+</form>
+</div>
+<script type="text/javascript" src="scripts/forms validation.js"></script>
+</body>
+</html>
