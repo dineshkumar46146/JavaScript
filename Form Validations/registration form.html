@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles/registration form.css">
+</head>
+<body>
+<form name="registerForm" onchange="getValidity()">
+	<p>First Name:
+		<input size="35" type="text" name="firstname" required="true">
+		<div class="error" id="firstname-error"></div>
+	</p>
+	<p>Last Name:
+		<input size="35" type="text" name="lastname" required="true">
+		<div class="error" id="lastname-error"></div>
+		</p>
+	<p>Date Of Birth:
+		<input  type="date" name="date of birth">
+	</p>
+	<p>Email Id:
+		<input size="35" type="email" name="emailId" required="true" pattern=".@gloex.com" title="must filled valid mail" >
+		<div class="error" id="emailId-error"></div>
+	</p>
+		<div class="error" id="emailId-error"></div>
+	<p>Mobile Number:
+		<input size="35" type="text" name="mobilenumber" required="true" >
+		<div class="error" id="mobilenumber-error"></div>
+	</p>
+	<p>Gender:
+		male<input  type="radio" name="gender" value="male" checked="">
+		female<input  type="radio" name="gender" value="female"></p>
+		<div class="error" id="firstname-error"></div>
+	<p>Address:
+		<textarea size="65"></textarea></p>
+		<div class="error" id="firstname-error"></div>
+	<p>City:
+		<input size="35" type="text" name="city"></p>
+		<div class="error" id="firstname-error"></div>
+	<p>Pincode:
+		<input size="35" type="text" name="pincode"></p>
+		<div class="error" id="firstname-error"></div>
+	<p>State:
+		<input size="35" type="text" name="state"></p>
+		<div class="error" id="firstname-error"></div>
+	<p>country:
+		<select>
+		<option>india</option>
+		<option>others</option>
+	</select></p>
+	<p>Hobbies:
+		<input type="checkbox" name="" >drawing
+		<input type="checkbox" name="" >signing
+		<input type="checkbox" name="" >sketching
+		<input type="checkbox" name="" >others<input type="text" name="other">
+	</p>
+	<p>Course Selected:B.sc<input  type="radio" name="course" checked="">B.E
+		<input  type="radio" name="course" >Others<input  type="radio" name="course" ></p>
+</form>
+<button onclick="getFormValue()" id="btn">Get Form Value</button>
+<script type="text/javascript" src="scripts/registration form.js"></script>
+</body>
+</html>

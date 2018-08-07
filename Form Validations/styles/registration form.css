@@ -1,0 +1,9 @@
+/*input:valid:not(:focus) {
+	outline: 1px solid #f00;
+}*/
+
+.error {
+	color: red;
+	font-size: 12px;
+	font-weight: 500;
+}
