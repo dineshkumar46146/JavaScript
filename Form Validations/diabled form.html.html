@@ -1,0 +1,20 @@
+<html>
+<body>
+<input type='number' id='first' onkeyup="validateNumber()"/><br>
+<input type='number' id='second' onkeyup="validateNumber()"/><br>
+<script type="text/javascript" >
+function validateNumber()
+{
+  var first = parseInt(document.getElementById('first').value, 10);
+  var second = parseInt(document.getElementById('second').value, 10);
+
+  if(first > second){
+    document.getElementById('sub').disabled=false;
+  } else {
+    document.getElementById('sub').disabled=true;   
+  }
+}
+</script>
+<input type="submit" id="sub" disabled="disabled" />
+</body>
+</html>
