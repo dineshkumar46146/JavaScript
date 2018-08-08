@@ -37,14 +37,27 @@
 				</div>
 				<div class="col-md-1"></div>
 				<div class="col-md-5">
+					<form name="signupForm">
 					<h1>Create an account</h1>
 					<h4>It's free and always will be.</h4><br>
-					<input type="text" name="fname" placeholder="First name" class="input-border">&nbsp
-					<input type="text" name="surname" placeholder="surname"><br><br>
-					<input type="text" name="mobile or email" size="46" 
-					placeholder="mobile number or email address"><br><br>
-					<input type="password" name="pasword" size="46" 
-					 placeholder="New password"><br><br>
+					<div style="display: inline-flex;">
+						<div>
+							<input type="text" name="fname" placeholder="First name" class="input-border" onblur="fieldValidation('fname')" required><br>
+							<span class="error" id="fname-error"></span>
+						</div>&nbsp;&nbsp;
+						<div>
+							<input type="text" name="surname" placeholder="surname" onblur="fieldValidation('surname')" required><br>
+							<span class="error" id="surname-error"></span>
+						</div>
+					</div><br><br>
+					<div>
+						<input type="text" name="mobileOrEmail" size="46" placeholder="mobile number or email address" onblur="fieldValidation('mobileOrEmail')" pattern=".@gloex.com" required><br>
+						<span class="error" id="mobileOrEmail-error"></span>
+					</div><br>
+					<div>
+						<input type="password" name="password" size="46" placeholder="New password" onblur="fieldValidation('password')" required minlength="8"><br>
+						<span class="error" id="password-error"></span>
+					</div><br>
 					 <h4>Birthday</h4>
 					 <select>
 					 	<option>Day</option>
@@ -74,6 +87,7 @@
 					<span>By clicking Sign Up, you agree to our <a href="#">Terms</a>,<a href="#">Data Policy</a>and<br><a href="#">Cookie Policy</a>. You may receive SMS notifications from us and<br> can opt out at any time.</span><br><br>
 					<button class="btn btn-success"><span class="signup-btn">sign up</span></button><br><br>
 					<span><a href="#">Create a Page</a> for a celebrity, band or business.</span>
+				</form>
 				</div>
 				<div class="col-md-1"></div>
 			</div>
@@ -114,6 +128,6 @@
 <form>
 	<!-- <p>First Name:<input size="35" type="text" name="firstname"></p> -->
 </form>
-<script type="text/javascript" src="facebook.js"></script>
+<script type="text/javascript" src="scripts/facebook.js"></script>
 </body>
 </html>
