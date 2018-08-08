@@ -1,0 +1,34 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+.nav-pad {
+	padding: 3px;
+}
+.form-body {
+	background-color: #afa8a8;
+}
+.facebook-head {
+	background-color: #5762c6;
+}
+.head-color {
+	color: #fff;
+	font-size: 40px;
+}
+.forgetten-color {
+	color: #fff;
+	text-decoration: none;
+}
+.login-button {
+	text-align: center;
+}
+
+.label {
+	color: #fff;
+}
+.input-border {
+	border-radius: px;
+}
+.signup-btn {
+	padding: 0 15px 0 15px;
+}
