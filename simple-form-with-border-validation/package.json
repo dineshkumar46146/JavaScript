@@ -1,0 +1,24 @@
+{
+  "name": "facebook-login",
+  "version": "0.1.0",
+  "description": "Simple Javascript web application for facebook login page using HTML, Bootstrap and Javascript",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dhineshkumaru/facebook-login"
+  },
+  "keywords": ["lite-server"],
+  "author": "Todd Palmer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dhineshkumaru/facebook-login/issues"
+  },
+  "homepage": "https://github.com/Dhineshkumaru/facebook-login#readme",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  },
+  "dependencies": {}
+}

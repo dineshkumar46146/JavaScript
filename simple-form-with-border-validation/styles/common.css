@@ -1,0 +1,13 @@
+input {
+  width: 40%;
+}
+/*.form-center {
+	text-align: center;
+}
+*/
+.star-color {
+	color: red;
+}
+.borderColor {
+	border-color: red;
+}
